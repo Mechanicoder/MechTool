@@ -8,6 +8,8 @@
 #include <AIS_Shape.hxx>
 #include <AIS_InteractiveContext.hxx>
 
+#include <iostream>
+
 
 DrawProxy::DrawProxy(Handle(AIS_InteractiveContext) context)
     : context_(context)
@@ -20,10 +22,6 @@ DrawProxy::~DrawProxy()
 
 void DrawProxy::DrawCurvs(std::vector<Handle(Geom_Curve)> &curves)
 {
-    if (view_ == nullptr)
-    {
-        return;
-    }
     TopoDS_Compound compound;
     TopoDS_Builder builder;
     builder.MakeCompound(compound);
@@ -39,6 +37,7 @@ void DrawProxy::DrawCurvs(std::vector<Handle(Geom_Curve)> &curves)
     if (!compound.IsNull())
     {
         DrawShape(compound);
+        std::cout << "Draw " + std::to_string(curves.size()) + " curves finished!\n";
     }
 }
 

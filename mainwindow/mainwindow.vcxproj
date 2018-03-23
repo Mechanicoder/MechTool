@@ -111,7 +111,7 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I." "-I$(CASROOT)\samples\qt\Common\src" "-I$(CASROOT)\samples\qt\Interface\src" "-I$(CASROOT)\inc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore" "-ID:\Program Files\opencascade-7.1.0\opencascade-7.1.0\samples\qt\Tutorial\win$(ARCH)\$(VCVER)\moc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015" "-I.\GeneratedFiles" "-I.\..\Common\src"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I$(OCCROOT)\inc" "-I.\..\Interface\src" "-I.\..\Common\src" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\ActiveQt" "-I$(QTDIR)\include\QtWidgets" "-I.\.." "-I." "-I.\GeneratedFiles"</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -129,7 +129,7 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(CASROOT)\samples\qt\Common\src" "-I$(CASROOT)\samples\qt\Interface\src" "-I$(CASROOT)\inc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore" "-ID:\Program Files\opencascade-7.1.0\opencascade-7.1.0\samples\qt\Tutorial\win$(ARCH)\$(VCVER)\moc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015" "-I.\GeneratedFiles" "-I.\..\Common\src"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I$(OCCROOT)\inc" "-I.\..\Interface\src" "-I.\..\Common\src" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\ActiveQt" "-I$(QTDIR)\include\QtWidgets" "-I.\.." "-I." "-I.\GeneratedFiles"</Command>
     </CustomBuild>
     <ClInclude Include="GeneratedFiles\ui_MainWindow.h" />
     <CustomBuild Include="src\DocumentTut.h">
@@ -140,7 +140,7 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(CASROOT)\samples\qt\Common\src" "-I$(CASROOT)\samples\qt\Interface\src" "-I$(CASROOT)\inc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore" "-ID:\Program Files\opencascade-7.1.0\opencascade-7.1.0\samples\qt\Tutorial\win$(ARCH)\$(VCVER)\moc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015" "-I.\GeneratedFiles" "-I.\..\Common\src"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I$(OCCROOT)\inc" "-I.\..\Interface\src" "-I.\..\Common\src" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\ActiveQt" "-I$(QTDIR)\include\QtWidgets" "-I.\.." "-I." "-I.\GeneratedFiles"</Command>
     </CustomBuild>
     <CustomBuild Include="src\ApplicationTut.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
@@ -150,7 +150,7 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(CASROOT)\samples\qt\Common\src" "-I$(CASROOT)\samples\qt\Interface\src" "-I$(CASROOT)\inc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore" "-ID:\Program Files\opencascade-7.1.0\opencascade-7.1.0\samples\qt\Tutorial\win$(ARCH)\$(VCVER)\moc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015" "-I.\GeneratedFiles" "-I.\..\Common\src"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I$(OCCROOT)\inc" "-I.\..\Interface\src" "-I.\..\Common\src" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\ActiveQt" "-I$(QTDIR)\include\QtWidgets" "-I.\.." "-I." "-I.\GeneratedFiles"</Command>
     </CustomBuild>
     <CustomBuild Include="MainWindow.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
@@ -160,7 +160,7 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(CASROOT)\samples\qt\Common\src" "-I$(CASROOT)\samples\qt\Interface\src" "-I$(CASROOT)\inc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore" "-ID:\Program Files\opencascade-7.1.0\opencascade-7.1.0\samples\qt\Tutorial\win$(ARCH)\$(VCVER)\moc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015" "-I.\GeneratedFiles" "-I.\..\Common\src"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I$(OCCROOT)\inc" "-I.\..\Interface\src" "-I.\..\Common\src" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\ActiveQt" "-I$(QTDIR)\include\QtWidgets" "-I.\.." "-I." "-I.\GeneratedFiles"</Command>
     </CustomBuild>
     <CustomBuild Include="..\Interface\src\Translate.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
@@ -170,7 +170,7 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(CASROOT)\samples\qt\Common\src" "-I$(CASROOT)\samples\qt\Interface\src" "-I$(CASROOT)\inc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore" "-ID:\Program Files\opencascade-7.1.0\opencascade-7.1.0\samples\qt\Tutorial\win$(ARCH)\$(VCVER)\moc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015" "-I.\GeneratedFiles" "-I.\..\Common\src"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I$(OCCROOT)\inc" "-I.\..\Interface\src" "-I.\..\Common\src" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\ActiveQt" "-I$(QTDIR)\include\QtWidgets" "-I.\.." "-I." "-I.\GeneratedFiles"</Command>
     </CustomBuild>
     <CustomBuild Include="..\Interface\src\Application.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
@@ -180,7 +180,7 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(CASROOT)\samples\qt\Common\src" "-I$(CASROOT)\samples\qt\Interface\src" "-I$(CASROOT)\inc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore" "-ID:\Program Files\opencascade-7.1.0\opencascade-7.1.0\samples\qt\Tutorial\win$(ARCH)\$(VCVER)\moc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015" "-I.\GeneratedFiles" "-I.\..\Common\src"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I$(OCCROOT)\inc" "-I.\..\Interface\src" "-I.\..\Common\src" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\ActiveQt" "-I$(QTDIR)\include\QtWidgets" "-I.\.." "-I." "-I.\GeneratedFiles"</Command>
     </CustomBuild>
     <CustomBuild Include="..\Common\src\View.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
@@ -190,7 +190,7 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(CASROOT)\samples\qt\Common\src" "-I$(CASROOT)\samples\qt\Interface\src" "-I$(CASROOT)\inc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore" "-ID:\Program Files\opencascade-7.1.0\opencascade-7.1.0\samples\qt\Tutorial\win$(ARCH)\$(VCVER)\moc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015" "-I.\GeneratedFiles" "-I.\..\Common\src"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I$(OCCROOT)\inc" "-I.\..\Interface\src" "-I.\..\Common\src" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\ActiveQt" "-I$(QTDIR)\include\QtWidgets" "-I.\.." "-I." "-I.\GeneratedFiles"</Command>
     </CustomBuild>
     <CustomBuild Include="..\Common\src\Transparency.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
@@ -200,7 +200,7 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(CASROOT)\samples\qt\Common\src" "-I$(CASROOT)\samples\qt\Interface\src" "-I$(CASROOT)\inc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore" "-ID:\Program Files\opencascade-7.1.0\opencascade-7.1.0\samples\qt\Tutorial\win$(ARCH)\$(VCVER)\moc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015" "-I.\GeneratedFiles" "-I.\..\Common\src"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I$(OCCROOT)\inc" "-I.\..\Interface\src" "-I.\..\Common\src" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\ActiveQt" "-I$(QTDIR)\include\QtWidgets" "-I.\.." "-I." "-I.\GeneratedFiles"</Command>
     </CustomBuild>
     <CustomBuild Include="..\Common\src\MDIWindow.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
@@ -210,7 +210,7 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(CASROOT)\samples\qt\Common\src" "-I$(CASROOT)\samples\qt\Interface\src" "-I$(CASROOT)\inc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore" "-ID:\Program Files\opencascade-7.1.0\opencascade-7.1.0\samples\qt\Tutorial\win$(ARCH)\$(VCVER)\moc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015" "-I.\GeneratedFiles" "-I.\..\Common\src"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I$(OCCROOT)\inc" "-I.\..\Interface\src" "-I.\..\Common\src" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\ActiveQt" "-I$(QTDIR)\include\QtWidgets" "-I.\.." "-I." "-I.\GeneratedFiles"</Command>
     </CustomBuild>
     <CustomBuild Include="..\Common\src\Material.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
@@ -220,7 +220,7 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(CASROOT)\samples\qt\Common\src" "-I$(CASROOT)\samples\qt\Interface\src" "-I$(CASROOT)\inc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore" "-ID:\Program Files\opencascade-7.1.0\opencascade-7.1.0\samples\qt\Tutorial\win$(ARCH)\$(VCVER)\moc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015" "-I.\GeneratedFiles" "-I.\..\Common\src"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I$(OCCROOT)\inc" "-I.\..\Interface\src" "-I.\..\Common\src" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\ActiveQt" "-I$(QTDIR)\include\QtWidgets" "-I.\.." "-I." "-I.\GeneratedFiles"</Command>
     </CustomBuild>
     <CustomBuild Include="..\Common\src\DocumentCommon.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
@@ -230,7 +230,7 @@
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I$(CASROOT)\samples\qt\Common\src" "-I$(CASROOT)\samples\qt\Interface\src" "-I$(CASROOT)\inc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore" "-ID:\Program Files\opencascade-7.1.0\opencascade-7.1.0\samples\qt\Tutorial\win$(ARCH)\$(VCVER)\moc" "-ID:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015" "-I.\GeneratedFiles" "-I.\..\Common\src"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DNDEBUG -DNO_COMMONSAMPLE_EXPORTS -DNO_IESAMPLE_EXPORTS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB  "-I$(OCCROOT)\inc" "-I.\..\Interface\src" "-I.\..\Common\src" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\ActiveQt" "-I$(QTDIR)\include\QtWidgets" "-I.\.." "-I." "-I.\GeneratedFiles"</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -281,19 +281,19 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">win$(ARCH)\$(VCVER)\bin\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">win$(ARCH)\$(VCVER)\obj\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Tutorial</TargetName>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(PlatformName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)$(PlatformName)\$(ConfigurationName)\tmp\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectName)</TargetName>
     <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(PlatformName)\$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(PlatformName)\$(ConfigurationName)\tmp\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(PlatformName)\$(ConfigurationName)\tmp\$(ProjectName)\$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)</TargetName>
     <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</IgnoreImportLibrary>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;$(CASROOT)\samples\qt\Common\src;$(CASROOT)\samples\qt\Interface\src;$(CASROOT)\inc;D:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include;D:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtWidgets;D:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtGui;D:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtANGLE;D:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\include\QtCore;D:/Program Files/opencascade-7.1.0/opencascade-7.1.0/samples/qt/Tutorial/win$(ARCH)/$(VCVER)/moc;D:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\mkspecs\win32-msvc2015;.\GeneratedFiles;..\Common\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(OCCROOT)\inc;..\Interface\src;..\Common\src;$(QTDIR)\include;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtCore;$(QTDIR)\include\ActiveQt;$(QTDIR)\include\QtWidgets;..;.;.\GeneratedFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>win$(ARCH)\$(VCVER)\obj\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
@@ -313,16 +313,16 @@
       <WarningLevel>Level3</WarningLevel>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>qtmain.lib;shell32.lib;TKernel.lib;TKMath.lib;TKService.lib;TKV3d.lib;TKOpenGl.lib;TKBRep.lib;TKIGES.lib;TKSTL.lib;TKVRML.lib;TKSTEP.lib;TKSTEPAttr.lib;TKSTEP209.lib;TKSTEPBase.lib;TKGeomBase.lib;TKGeomAlgo.lib;TKG3d.lib;TKG2d.lib;TKXSBase.lib;TKShHealing.lib;TKHLR.lib;TKTopAlgo.lib;TKMesh.lib;TKPrim.lib;TKCDF.lib;TKBool.lib;TKBO.lib;TKFillet.lib;TKOffset.lib;Qt5Widgets.lib;Qt5Gui.lib;Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:\ProgramQt\Qt5.6.2-64\5.6\msvc2015_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;"\lib;$(CASROOT)\win64\vc10\lib";%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>qtmain.lib;shell32.lib;test.lib;Draw.lib;TKBin.lib;TKBinL.lib;TKBinTObj.lib;TKBinXCAF.lib;TKBO.lib;TKBool.lib;TKBRep.lib;TKCAF.lib;TKCDF.lib;TKDCAF.lib;TKDraw.lib;TKernel.lib;TKFeat.lib;TKFillet.lib;TKG2d.lib;TKG3d.lib;TKGeomAlgo.lib;TKGeomBase.lib;TKHLR.lib;TKIGES.lib;TKIVtk.lib;TKIVtkDraw.lib;TKLCAF.lib;TKMath.lib;TKMesh.lib;TKMeshVS.lib;TKOffset.lib;TKOpenGl.lib;TKPrim.lib;TKQADraw.lib;TKService.lib;TKShHealing.lib;TKStd.lib;TKStdL.lib;TKSTEP.lib;TKSTEP209.lib;TKSTEPAttr.lib;TKSTEPBase.lib;TKSTL.lib;TKTObj.lib;TKTObjDRAW.lib;TKTopAlgo.lib;TKTopTest.lib;TKV3d.lib;TKVCAF.lib;TKViewerTest.lib;TKVRML.lib;TKXCAF.lib;TKXDEDRAW.lib;TKXDEIGES.lib;TKXDESTEP.lib;TKXMesh.lib;TKXml.lib;TKXmlL.lib;TKXmlTObj.lib;TKXmlXCAF.lib;TKXSBase.lib;TKXSDRAW.lib;Qt5Widgets.lib;Qt5Gui.lib;Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(OCCROOT)\win64\vc14\lib;$(SolutionDir)$(PlatformName)\$(ConfigurationName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreImportLibrary>true</IgnoreImportLibrary>
       <LinkIncremental>false</LinkIncremental>
-      <OutputFile>$(OutDir)\Tutorial.exe</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </Link>
     <Midl>
@@ -333,6 +333,10 @@
     <ResourceCompile>
       <PreprocessorDefinitions>_WINDOWS;NDEBUG;NO_COMMONSAMPLE_EXPORTS;NO_IESAMPLE_EXPORTS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -373,6 +377,10 @@
     <ResourceCompile>
       <PreprocessorDefinitions>_WINDOWS;_DEBUG;NO_COMMONSAMPLE_EXPORTS;NO_IESAMPLE_EXPORTS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

@@ -28,6 +28,7 @@
 #include <Geom_Surface.hxx>
 #include <BRep_Tool.hxx>
 
+#include <iostream>
 // =======================================================================
 // function : Viewer
 // purpose  :
@@ -284,6 +285,8 @@ void DocumentCommon::onAnalyseNormal()
 {
     if (mySelectedList.Size() == 1)
     {
+        std::cout << "Analysis face normal\n";
+
         Handle(AIS_InteractiveObject) obj = mySelectedList.First();
         Handle(AIS_Shape) shape = Handle(AIS_Shape)::DownCast(obj);
 
@@ -298,13 +301,13 @@ void DocumentCommon::onAnalyseNormal()
             // ¸öµãÇúÂÊ
             std::vector<std::vector<double> > res = SurfaceProperty::Curvature(
                 face, umin, umax, vmin, vmax, false);
-            for (size_t i = 0; i < res.size(); i++)
+            /*for (size_t i = 0; i < res.size(); i++)
             {
                 for (size_t j = 0; j < res[i].size(); j++)
                 {
                     int first = res[i][j];
                 }
-            }
+            }*/
             drawImage_ = new DrawNormalRate(res, umin, umax, vmin, vmax, myViews.front());
             drawImage_->show();
         }
@@ -315,26 +318,31 @@ void DocumentCommon::OnSurfaceOffset()
 {
     if (mySelectedList.Size() == 1)
     {
+        std::cout << "Draw offset curves\n";
+
         Handle(AIS_InteractiveObject) obj = mySelectedList.First();
         Handle(AIS_Shape) shape = Handle(AIS_Shape)::DownCast(obj);
 
         TopoDS_Face face = TopoDS::Face(shape->Shape());
         if (!face.IsNull())
         {
+            std::cout << "Select a face\n";
+
             Handle(Geom_Surface) surf = BRep_Tool::Surface(face);
 
             QInputDialog *input = new QInputDialog(nullptr);
             if (input->exec() == QDialog::Accepted)
             {
                 double dist = input->textValue().toDouble();
+                std::cout << "Offset distance: " + std::to_string(dist) + "\n";
                 std::vector<std::vector<gp_Pnt> > pnts;
                 std::vector<Handle(Geom_Curve)> curves = SurfaceTools::OffsetCurves(surf, dist, pnts);
                 drawer_->DrawCurvs(curves);
 
-                for (size_t i = 0; i < pnts.size(); i++)
-                {
-                    drawer_->DrawPoints(pnts[i]);
-                }
+                //for (size_t i = 0; i < pnts.size(); i++)
+                //{
+                //    drawer_->DrawPoints(pnts[i]);
+                //}
             }
         }
     }

@@ -8,7 +8,6 @@
 #include <Standard_Handle.hxx>
 #include <gp_Pnt.hxx>
 class Geom_Curve;
-class View;
 class AIS_InteractiveContext;
 class TopoDS_Shape;
 
@@ -24,7 +23,6 @@ public:
     void DrawShape(const TopoDS_Shape &shape);
 private:
     Handle(AIS_InteractiveContext) context_;
-    View *view_;
 };
 
 #endif // DRAWPROXY_H
